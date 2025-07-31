@@ -12,13 +12,24 @@ export default function TabLayout() {
           backgroundColor: '#FFFFFF',
           borderTopWidth: 1,
           borderTopColor: '#E5E7EB',
-          paddingBottom: 8,
-          paddingTop: 8,
-          height: 65,
+          paddingBottom: 12,
+          paddingTop: 12,
+          height: 80,
+          paddingHorizontal: 8,
         },
         tabBarLabelStyle: {
           fontSize: 12,
           fontWeight: '500',
+          marginTop: 4,
+        },
+        tabBarIconStyle: {
+          marginBottom: 2,
+        },
+        tabBarItemStyle: {
+          paddingHorizontal: 4,
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
         },
       }}>
       <Tabs.Screen
@@ -26,7 +37,7 @@ export default function TabLayout() {
         options={{
           title: 'Donor',
           tabBarIcon: ({ size, color }) => (
-            <Heart size={size} color={color} />
+            <Heart size={20} color={color} />
           ),
         }}
       />
@@ -35,7 +46,7 @@ export default function TabLayout() {
         options={{
           title: 'Patient',
           tabBarIcon: ({ size, color }) => (
-            <User size={size} color={color} />
+            <User size={20} color={color} />
           ),
         }}
       />
@@ -44,7 +55,7 @@ export default function TabLayout() {
         options={{
           title: 'Admin',
           tabBarIcon: ({ size, color }) => (
-            <Shield size={size} color={color} />
+            <Shield size={20} color={color} />
           ),
         }}
       />
@@ -53,7 +64,7 @@ export default function TabLayout() {
         options={{
           title: 'Sign Up',
           tabBarIcon: ({ size, color }) => (
-            <UserPlus size={size} color={color} />
+            <UserPlus size={20} color={color} />
           ),
         }}
       />
